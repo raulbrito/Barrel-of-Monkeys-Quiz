@@ -1,0 +1,10 @@
+<vehicules>
+	<cars type="Cheap">
+	<car country="Sweden">Volvo</car>
+	<car country="Japan">Honda</car>
+	<car country="France">Renault</car>
+	</cars>
+	<cars type="Expensive">
+	<car country="Germany">Mercedes</car>
+	</cars>
+</vehicules>

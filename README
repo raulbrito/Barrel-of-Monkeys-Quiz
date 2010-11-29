@@ -1,0 +1,52 @@
+Barrel of Monkeys
+=================
+
+Partial Java implementation of Ruby quizz number 30: Barrel Of Monkeys.
+
+The current implementation is very naive, but it aims at showing
+some main concepts of Java Programming: interfaces, testing, mocking,etc..
+
+Unfortunately I have no time at the moment to do a more fancy
+implementation which would require graph-type data structures
+and smarter searching algorithms.
+
+
+Description of the problem:
+
+Last week one of the local radio stations was having a “Barrel of Mon-
+keys” afternoon. While a song was playing, listeners would call in and
+suggest the next song, which had to begin with the same letter as the
+playing song ended in.
+So, for example, a sample (eclectic) Barrel of Monkeys playlist might be
+as follows:
+  1. “Peace Train”
+  2. “No More ‘I Love You’s”’
+  3. “Super Trooper”
+  4. “Rock Me, Amadeus”
+  5. “Song of the South”
+  6. “Hooked on a Feeling”
+  7. “Go Tell It on the Mountain”
+See how each song name begins with the last letter of the name of the
+song before it?
+Just creating any playlist would be too easy, however. We need a worthy
+problem to solve:
+  1. Given any starting and ending song, create a playlist that connects
+      the two songs.
+  2. For extra credit, try to create a playlist of a specific duration (to fill
+      a particular time slot on the radio).
+  3. For more extra credit, try to find the shortest playlist that links
+      the songs (either in terms of number of songs or total play time).
+
+You can find an XML file with more than 5,000 song names and play
+times at http://rubyquiz.com/SongLibrary.xml.gz (100KB compressed). The
+song durations are in milliseconds.
+Finally, because this problem may be enough fun without having to
+discover trouble yourself, I offer a few things to think about here:
+   • What do you do with songs with names like “’74-’75” or “Seventy
+     Times 7” or “=:0 :(”?
+   • How about a song named “Candy Everybody Wants (unplugged)”
+     or “Voulez-Vous [Extended Remix, 1979 US Promo]” or “Speed
+     Racer - Hardcore Mix” or “Breathe Remix Feat Sean Paul”?
+   • What do you do if there is no way to connect two songs? (And how
+     do you know for sure?)
+
